@@ -26,6 +26,7 @@ const submitHandler = e =>{
           <label>Last Name : </label>
           <input type="text" {...bindLastName} style={{backgroundColor: 'white', color: 'navy'}} />
         </div>
+        
         <button type="submit">Submit</button>
         <h2>Your First Name is : {firstName}</h2>
         <h2>Your Last Name is : {lastName}</h2>
