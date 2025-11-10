@@ -1,0 +1,14 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.white-input {
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  padding: 6px;
+  border-radius: 5px;
+}
