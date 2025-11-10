@@ -1,4 +1,3 @@
-import React from 'react'
 import useInput from '../customHooks/useInput.jsx'
 
 function UserForm() {
