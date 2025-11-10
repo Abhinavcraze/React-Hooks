@@ -34,6 +34,7 @@ import DocumentTitleOne from './Components/customHooks/DocumentTitleOne.jsx'
 import DocumentTitleTwo from './Components/customHooks/DocumentTitleTwo.jsx' 
 import CounterOne from './Components/customHooks/Counterone.jsx'
 import CounterTwo from './Components/customHooks/Countertwo.jsx'
+import UserForm from './Components/customHooks/UserForm.jsx'
 
 function App() {
   const [showCounter, setShowCounter] = useState(true); //for interval hook counter
@@ -145,6 +146,9 @@ function App() {
       <p> useCounter concept</p>
       <CounterOne />
       <CounterTwo />
+      <p>UserInput Custom Hooks</p>
+      <h2>Form</h2>
+      <UserForm />
 
     </div>
   ) 
