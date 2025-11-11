@@ -1,4 +1,4 @@
-import React,{useState,useReducer} from 'react'
+import React,{useState} from 'react'
 import './App.css'
 import  ClassCounterState from './Components/useState/ClassCounterstate.jsx'
 import FuncHookCounter from './Components/useState/FuncHookCounter.jsx'
@@ -26,23 +26,6 @@ import Counter1 from './Components/useReducer/Counter1.jsx'
 import Counter2 from './Components/useReducer/Counter2.jsx'
 import Counter3 from './Components/useReducer/Counter3.jsx'
 
-import ComponentP from './Components/useReducer+useContext/ComponentP.jsx'
-import ComponentQ from './Components/useReducer+useContext/ComponentQ.jsx'
-import ComponentR from './Components/useReducer+useContext/ComponentR.jsx'
-//export const countContext = React.createContext()
-const initialState = 0;
-const reducer = (state , action) =>{
-  switch(action){
-    case 'increment':
-      return state + 1
-    case 'decrement':
-      return state - 1
-    case 'reset':
-      return initialState
-    default:
-      return state
-  }
-}
 
 
 import ParentComponent from './Components/useCallback/ParentComponent.jsx'
@@ -61,7 +44,7 @@ import UserForm from './Components/customHooks/UserForm.jsx'
 
 function App() {
   const [showCounter, setShowCounter] = useState(true); //for interval hook counter
- const [count , dispatch] = useReducer(reducer , initialState)  //for UseReducer + useContext concept
+
 
   return (
     <div className="App">
@@ -149,17 +132,8 @@ function App() {
       <hr/>
       <hr/> 
 
-      <CountContext.Provider value = {{countState : count , countDispatch : dispatch}}>
-        <div className = 'App'>
-          <h2>UseReducer + UseContext</h2>
-          Count - {count}
-          <ComponentP/>
-          <ComponentQ/>
-          <ComponentR/>
-        </div>
-      </CountContext.Provider>
       
-
+  
       <hr/>
       <hr/>
 
