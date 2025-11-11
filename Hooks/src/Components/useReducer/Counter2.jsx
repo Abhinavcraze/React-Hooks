@@ -1,40 +1,40 @@
 import React,{useReducer} from 'react'
-const initialState = {
+const initialcurrentState = {
   firstCounter: 0,
-  secondCounter: 10   //example for multiple states and load in the object only
+  secondCounter: 10   //example for multiple currentStates and load in the object only
 }
 
-const reducer = (state , action) =>{
+const reducer = (currentState , action) =>{
   switch(action.type){
     case 'increment':
       return {
-        ...state,
-        firstCounter: state.firstCounter + action.value
+        ...currentState,
+        firstCounter: currentState.firstCounter + action.value
       }
     case 'decrement':
       return {
-        ...state,
-        firstCounter: state.firstCounter - action.value
+        ...currentState,
+        firstCounter: currentState.firstCounter - action.value
       }
       case 'increment2':
       return {
-        ...state,
-        secondCounter: state.secondCounter + action.value
+        ...currentState,
+        secondCounter: currentState.secondCounter + action.value
       }
     case 'decrement2':
       return {
-        ...state,
-        secondCounter: state.secondCounter - action.value
+        ...currentState,
+        secondCounter: currentState.secondCounter - action.value
       }
     case 'reset':
-      return initialState
+      return initialcurrentState
     default:
-      return state
+      return currentState
   }
 }
 
 function Counter2() {
-  const[count , dispatch] = useReducer(reducer , initialState)
+  const[count , dispatch] = useReducer(reducer , initialcurrentState)
   return (
     <div>
       <h2>First Counter - {count.firstCounter}</h2>

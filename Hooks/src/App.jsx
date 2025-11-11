@@ -132,10 +132,6 @@ function App() {
       <hr/>
       <hr/> 
 
-      
-  
-      <hr/>
-      <hr/>
 
       <ParentComponent />
 
