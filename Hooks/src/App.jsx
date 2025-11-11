@@ -21,6 +21,7 @@ import IntervalHookCounter2 from './Components/useEffect/IntervalHookCounter2.js
 import FetchData from './Components/useEffect/FetchData.jsx'
 import FetchData2 from './Components/useEffect/FetchData2.jsx'
 import FetchIndividualData from './Components/useEffect/FetchIndividualData.jsx'
+import FetchData3 from './Components/useEffect/FetchData3.jsx'
 
 import Counter1 from './Components/useReducer/Counter1.jsx'
 import Counter2 from './Components/useReducer/Counter2.jsx'
@@ -134,6 +135,8 @@ function App() {
       <FetchData2 />
       <p>Fetching individual data</p>
       <FetchIndividualData />
+      <p>Fetching data with loading, error and empty state</p>
+      <FetchData3 />
 
 
       <hr/>
