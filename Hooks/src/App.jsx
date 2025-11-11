@@ -24,6 +24,7 @@ import FetchIndividualData from './Components/useEffect/FetchIndividualData.jsx'
 
 import Counter1 from './Components/useReducer/Counter1.jsx'
 import Counter2 from './Components/useReducer/Counter2.jsx'
+import MultipleUseRender './Components/useReducer/MultipleUseRender.jsx'
 
 import ParentComponent from './Components/useCallback/ParentComponent.jsx'
 
@@ -122,6 +123,7 @@ function App() {
       <h2>UseReducer Concept </h2>
       <Counter1/>
       <Counter2/>
+      <MultipleUseRender/>
 
       <hr/>
       <hr/>

@@ -44,10 +44,10 @@ function Counter2() {
       <button onClick={() => dispatch({type : 'decrement' , value : 1})}>Decrement</button>
       <button onClick={() => dispatch({type : 'increment' , value : 5})}>Increment 5</button>
       <button onClick={() => dispatch({type : 'decrement' , value : 5})}>Decrement 5</button>
-
-      <button onClick={() => dispatch({type : 'increment2' , value : 2})}>Increment</button>
-      <button onClick={() => dispatch({type : 'decrement2' , value : 2})}>Decrement</button>
-
+      <div>
+        <button onClick={() => dispatch({type : 'increment2' , value : 1})}>Increment Counter 2</button>
+        <button onClick={() => dispatch({type : 'decrement2' , value : 1})}>Decrement Counter 2</button>
+      </div>
 
       <button onClick={() => dispatch({type : 'reset'})}>Reset</button>
     </div>
