@@ -22,6 +22,9 @@ import FetchData from './Components/useEffect/FetchData.jsx'
 import FetchData2 from './Components/useEffect/FetchData2.jsx'
 import FetchIndividualData from './Components/useEffect/FetchIndividualData.jsx'
 
+import Counter1 from './Components/useReducer/Counter1.jsx'
+import Counter2 from './Components/useReducer/Counter2.jsx'
+
 import ParentComponent from './Components/useCallback/ParentComponent.jsx'
 
 import Counter from './Components/useMemo/Counter.jsx'
@@ -112,6 +115,13 @@ function App() {
       <p>Fetching individual data</p>
       <FetchIndividualData />
 
+
+      <hr/>
+      <hr/>
+
+      <h2>UseReducer Concept </h2>
+      <Counter1/>
+      <Counter2/>
 
       <hr/>
       <hr/>
