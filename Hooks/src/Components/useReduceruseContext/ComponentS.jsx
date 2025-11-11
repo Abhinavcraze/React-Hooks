@@ -1,10 +1,11 @@
 import React,{useContext} from 'react'
-//import { countContext } from '../../App.jsx'
+import { CountContext } from '../../App.jsx'
 
-function ComponentP() {
-  const countContext = useContext(countContext)
+function ComponentS() {
+  const countContext = useContext(CountContext)
   return (
     <div>
+      Component S {countContext.countState}
       <button onClick={() => countContext.countDispatch('increment')}>Increment</button>
       <button onClick={() => countContext.countDispatch('decrement')}>Decrement</button>
       <button onClick={() => countContext.countDispatch('reset')}>Reset</button>
@@ -12,4 +13,4 @@ function ComponentP() {
   )
 }
 
-export default ComponentP
+export default ComponentS
