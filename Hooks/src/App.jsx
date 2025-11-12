@@ -26,6 +26,7 @@ import FetchData3 from './Components/useEffect/FetchData3.jsx'
 import Counter1 from './Components/useReducer/Counter1.jsx'
 import Counter2 from './Components/useReducer/Counter2.jsx'
 import Counter3 from './Components/useReducer/Counter3.jsx'
+import DataFetching from './Components/useReducer/DataFetching.jsx'
 
 import ComponentP from './Components/useReduceruseContext/ComponentP.jsx'
 import ComponentQ from './Components/useReduceruseContext/ComponentQ.jsx'
@@ -59,6 +60,7 @@ import DocumentTitleTwo from './Components/customHooks/DocumentTitleTwo.jsx'
 import CounterOne from './Components/customHooks/Counterone.jsx'
 import CounterTwo from './Components/customHooks/Countertwo.jsx'
 import UserForm from './Components/customHooks/UserForm.jsx'
+import DataFetching1 from './Components/useReducer/DataFetching.jsx'
 
 function App() {
   const [showCounter, setShowCounter] = useState(true); //for interval hook counter
@@ -148,6 +150,11 @@ function App() {
       <Counter2/>
       <hr/>
       <Counter3/> 
+      <hr/>
+
+      <h2>UseReducer with UseContext Concept </h2>
+      <p>Here CountContext is created to share the state across multiple components without prop drilling</p> 
+      <DataFetching1 />
 
       <hr/>
       <hr/> 
